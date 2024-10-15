@@ -3,8 +3,7 @@ CREATE TABLE IF NOT EXISTS users(
     username text NOT NULL,
     email text NOT NULL,
     password_hash bytea NOT NULL,
-    role integer NOT NULL,
-    wage numeric NOT NULL,
+    contract int NOT NULL,
     created_at timestamptz NOT NULL DEFAULT now(),
     updated_at timestamptz NOT NULL DEFAULT now()
 );
